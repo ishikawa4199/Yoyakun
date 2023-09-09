@@ -1,0 +1,27 @@
+
+@media screen and (max-width: 480px) {
+    
+    body{
+        font-family:"Helvetica Neue",
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+        
+        background-color: #eeddbb;
+    }
+
+    .wrapper{
+        padding: 0;
+        margin: 0;
+        max-width: 480px;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+
+
+}
+

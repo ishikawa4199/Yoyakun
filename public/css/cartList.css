@@ -1,0 +1,54 @@
+
+
+
+
+
+  
+
+  @media screen and (max-width: 480px) {
+    
+    
+    table{
+      width: 100%;
+      background-color: white;
+      border-collapse: collapse;
+      font-size: 0.8em;
+
+
+    }
+
+    table tr th{
+      text-align: center;
+      width: 80px;
+    }
+
+    table tr th, tr td{
+      border-bottom: solid black 1px;
+    }
+
+    table tr td{
+      padding: 3px;
+
+    }
+
+
+    .price,.quantity,.itemPrice{
+        text-align: center;
+
+
+    }
+
+    .submit-btn{
+        background-color: #eb6100;
+        color: white;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        margin-top: 50px;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+
+
+    }
+  }

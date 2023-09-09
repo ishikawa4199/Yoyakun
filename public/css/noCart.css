@@ -1,0 +1,29 @@
+@media screen and (max-width: 480px) {
+    .cart-info{
+        margin: 0 auto;
+        width: 350px;
+        text-align: center;
+        color: white;
+        background-color: #eb6100;
+        padding: 10px;
+        border-radius: 5px;
+
+    
+    }
+
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+
+
+    }
+
+    .btn{
+        
+    }
+
+
+
+  }
