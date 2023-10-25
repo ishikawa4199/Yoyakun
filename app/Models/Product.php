@@ -41,6 +41,9 @@ class Product extends Model
 
 
     public function createProduct(Request $request){
+        
+
+        
         return $this->create([
             'product_id' => (string)Str::uuid(),
             'name' => $request->name,
@@ -49,10 +52,13 @@ class Product extends Model
 
 
         ]);
+
+        
     }
 
     public function getProductInfo($product_id){
         $product = $this->where('product_id',$product_id)->first();
+
         $product_list = [
             'name' => $product->name,
             'price' => $product->price

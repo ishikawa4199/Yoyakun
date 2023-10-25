@@ -1,6 +1,12 @@
 
 @media screen and (max-width: 480px) {
     
+    *{
+        font-size: 24px;
+
+    }
+
+
     body{
         font-family:"Helvetica Neue",
         Arial,
@@ -8,7 +14,8 @@
         "Hiragino Sans",
         Meiryo,
         sans-serif;
-        
+        font-size: 24px;
+
         background-color: #eeddbb;
     }
 
@@ -21,6 +28,10 @@
 
     }
 
+    
+    input{
+        appearance: none;
+    }
 
 
 }

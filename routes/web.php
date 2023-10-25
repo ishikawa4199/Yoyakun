@@ -18,7 +18,15 @@ use App\Http\Controllers\OrderController;
 Route::get('admin/create/seat',[SeatController::class,'createSeat'])->name('createSeat');
 Route::get('/admin/product/register',[ProductController::class,'register'])->name('product.register');
 Route::post('/admin/product/store',[ProductController::class,'store'])->name('product.store');
+
+
+
+
 Route::get('/order/list',[ProductController::class,'list'])->name('product.list');
+
+
+
+
 Route::get('/order/detail/{id}',[ProductController::class,'detail'])->name('product.detail');
 Route::post('/order/addcart',[OrderController::class,'addCart'])->name('product.addCart');
 Route::get('/order/cart/list',[OrderController::class,'cartList'])->name('cart.list');

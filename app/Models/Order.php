@@ -71,7 +71,7 @@ class Order extends Model
         $product = new Product;
         $slip = new Slip;
         
-        $orders = $this->where('slip_num',$slip_num)->get();
+        $orders = $this->where('slip_num',$slip_num)->orderBy('created_at','desc')->get();
         
         $ordersInfo = [];
         foreach($orders as $order){

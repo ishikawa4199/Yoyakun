@@ -20,7 +20,8 @@ class ProductController extends Controller
         return view('admin.product.list',['products' => $products]);
     }
 
-    public function store(ProductRequest $request){
+    public function store(Request $request){
+
         try{
             DB::beginTransaction();
             $file_name = $request->file('product_image')->getClientOriginalName();
@@ -38,19 +39,22 @@ class ProductController extends Controller
 
 
             ]);
-            DB::commit();
+
             
+            DB::commit();
             return redirect(route('product.register'));
+            
+            }catch(\Throwable $e){
+                abort(500);
+                DB::rollback();
 
-        }catch(\Throwable $e){
-            abort(500);
-            DB::rollBack();
-
-        }
+            }
+            
+            
     }
 
     public function update(){
-
+        
     }
 
     public function detail($id){
