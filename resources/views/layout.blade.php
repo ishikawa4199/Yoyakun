@@ -10,12 +10,16 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/73f1a404f3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+    @vite('resources/css/app.css')
     @stack('css')
     
 </head>
 
 <body>
     @yield('content')
+    <h1 class="text-center text-3xl font-bold underline bg-cyan-500 shadow-lg shadow-cyan-500/50">
+    Hello world!
+  </h1>
 </body>
 
 
