@@ -18,7 +18,7 @@
             
             @foreach($products as $product)
             <a class="detail-link" href="/order/detail/{{ $product->product_id }}">
-                <div class="product-container">
+                <div class="product-container" class="shadow-md">
                     
                     <img class="product-image" src="{{ asset('storage'.$product->productImage[0]->path) }}" alt="">
                     <div class="product-detail">
