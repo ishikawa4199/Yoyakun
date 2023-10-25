@@ -10,7 +10,6 @@ class Slip extends Model
     use HasFactory;
     protected $table = "slips";
     protected $fillable = [
-
         'slip_id',
         'slip_num',
         'seat_num',
@@ -74,6 +73,17 @@ class Slip extends Model
 
     public function updateSlipStatus($slip_num){
         return $this->where('slip_num',$slip_num)->update(['status' => 2]);
+    }
+    
+
+    public function getSlipNum($slip_num,$status){
+        return $this->where('slip_num','=',$slip_num)->where('status','=',$status)->get();
+
+    }
+
+    public function getSlipNumsByStatus($status){
+        return $this->where('status',$status)->get();
+        
     }
 
 }

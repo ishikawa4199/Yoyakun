@@ -15,7 +15,10 @@ class OrderController extends Controller
 {
 
 
-    private $seat_num = 145;
+    private $seat_num = 155;
+
+
+
     public function store(Request $request){
         
         $order = new Order;
@@ -29,10 +32,7 @@ class OrderController extends Controller
                 'orders_id' => (string)Str::uuid(),
                 'slip_num' => $memory->slip_num,
                 'product_id' => $data['session_product_id'],
-                'quantity' => $data['session_quantity']
-                
-                
-                
+                'quantity' => $data['session_quantity'],     
             ]);
         }
     
@@ -175,7 +175,16 @@ class OrderController extends Controller
         return view('admin.account.complete');
 
     }
+    
+    public function ordersList(){
+        return view('admin.order.ordersList');
 
+    }
+
+    public function getOrdersList(){
+        $order = new Order;
+       return response()->json($order->getOrders());
+    }
 
 
 }

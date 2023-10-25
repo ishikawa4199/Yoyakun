@@ -28,11 +28,16 @@ class Product extends Model
     }
 
 
+    public function getName(){
+        return $this->name;
+
+    }
+
     public function productImage(){
         return $this->hasMany('App\Models\ProductImage','product_id','product_id');
-
-        
     }
+
+    
 
 
     public function createProduct(Request $request){
