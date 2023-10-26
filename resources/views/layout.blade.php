@@ -15,11 +15,12 @@
     
 </head>
 
+@include('header')
+
+
+
 <body>
     @yield('content')
-    <h1 class="text-center text-3xl font-bold underline bg-cyan-500 shadow-lg shadow-cyan-500/50">
-    Hello world!
-  </h1>
 </body>
 
 

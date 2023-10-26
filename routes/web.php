@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SeatController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
-
+use App\Http\Controllers\IndexController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +20,7 @@ Route::get('/admin/product/register',[ProductController::class,'register'])->nam
 Route::post('/admin/product/store',[ProductController::class,'store'])->name('product.store');
 
 
+Route::get('/',[IndexController::class,'index'])->name('index');
 
 
 Route::get('/order/list',[ProductController::class,'list'])->name('product.list');

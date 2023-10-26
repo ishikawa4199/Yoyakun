@@ -11,8 +11,16 @@ export default {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'main': "url('img/main.jpg')",
+    
+      }
+
+    },
   },
   plugins: [],
+
 }
+
 

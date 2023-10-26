@@ -54,7 +54,7 @@ class OrderController extends Controller
             'session_product_id' => $request->product_id,
             'session_quantity' => $request->quantity
         ];
-        
+         
    
         
 
